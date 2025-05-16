@@ -25,7 +25,7 @@ A simple code editor with a built-in terminal designed for young coders learning
 1. Clone this repository:
    ```
    git clone https://github.com/NAVEENKUMARKR777/Code-Editor-With-Terminal.git
-   cd Code-Editor-With-Terminal
+   cd codelab
    ```
 
 2. Install dependencies:
@@ -43,9 +43,37 @@ A simple code editor with a built-in terminal designed for young coders learning
    http://localhost:3000
    ```
 
-## Deployment
+## Deployment to Render
 
-This application can be deployed to platforms like Heroku, Vercel, or Netlify with minimal configuration. Make sure the deployment environment has both Node.js and Python installed for full functionality.
+Follow these steps to deploy this application to Render for free:
+
+1. Create a Render account at [render.com](https://render.com)
+
+2. Push your code to a GitHub repository
+
+3. In the Render dashboard, click on "New" and select "Web Service"
+
+4. Connect your GitHub repository
+
+5. Configure the service:
+   - **Name**: Choose a name (e.g., codelab)
+   - **Environment**: Node
+   - **Build Command**: `npm install`
+   - **Start Command**: `node server.js`
+   - **Plan**: Free
+
+6. Scroll down to "Advanced" and add the following environment variables:
+   - `NODE_ENV`: `production`
+
+7. Click "Create Web Service"
+
+8. Render will automatically build and deploy your application
+   - You'll be able to access it at `https://your-service-name.onrender.com`
+
+**Important Notes for Render Deployment:**
+- The free tier of Render may spin down after periods of inactivity (usually 15 minutes)
+- The first request after inactivity will take a bit longer to load as the service spins up
+- Python execution is available on Render through their buildpacks system
 
 ## For Young Coders
 
