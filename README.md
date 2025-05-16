@@ -24,8 +24,8 @@ A simple code editor with a built-in terminal designed for young coders learning
 
 1. Clone this repository:
    ```
-   git clone https://github.com/yourusername/codelab.git
-   cd codelab
+   git clone https://github.com/NAVEENKUMARKR777/Code-Editor-With-Terminal.git
+   cd Code-Editor-With-Terminal
    ```
 
 2. Install dependencies:
