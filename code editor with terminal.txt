@@ -1,0 +1,5 @@
+Create a coding editor with terminal to execute programs and see output. e.g. a min version of https://www.online-python.com/
+
+Note: Only end to end finished and hosted functionality would be considered. Host your solution and provide URL for evaluation. No code samples would be accepted, only URL will be used for evaluation.
+
+Eval criteria: Programs that can take input and display output. What unique features can u think of and add in your editor, service, thinking from user perspective and adding relevant feature. User is a young coder learning to code.

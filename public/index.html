@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeLab - Learn to Code</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/theme/dracula.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <i class="fas fa-code"></i> CodeLab
+      </div>
+      <div class="language-selector">
+        <select id="language-select">
+          <option value="python">Python</option>
+          <option value="javascript">JavaScript</option>
+        </select>
+      </div>
+    </header>
+
+    <main>
+      <div class="editor-container">
+        <div class="editor-header">
+          <span>Code Editor</span>
+          <div class="editor-actions">
+            <button id="run-btn" class="btn primary"><i class="fas fa-play"></i> Run</button>
+            <button id="clear-btn" class="btn secondary"><i class="fas fa-trash"></i> Clear</button>
+          </div>
+        </div>
+        <textarea id="code-editor"></textarea>
+      </div>
+
+      <div class="terminal-container">
+        <div class="terminal-header">
+          <span>Terminal Output</span>
+          <div class="terminal-actions">
+            <button id="clear-terminal-btn" class="btn secondary"><i class="fas fa-broom"></i> Clear</button>
+          </div>
+        </div>
+        <div class="terminal-content" id="terminal-output"></div>
+        <div class="input-area">
+          <label for="input-data">Input:</label>
+          <textarea id="input-data" placeholder="Enter program input here (if needed)"></textarea>
+        </div>
+      </div>
+    </main>
+
+    <div class="learning-panel">
+      <div class="panel-header">
+        <span>Learning Resources</span>
+        <button id="toggle-panel-btn" class="btn mini"><i class="fas fa-chevron-up"></i></button>
+      </div>
+      <div class="panel-content">
+        <div class="code-snippets">
+          <h3>Code Examples</h3>
+          <div class="snippet-list">
+            <button class="snippet-btn" data-language="python" data-snippet="hello-world">Hello World (Python)</button>
+            <button class="snippet-btn" data-language="python" data-snippet="variables">Variables (Python)</button>
+            <button class="snippet-btn" data-language="javascript" data-snippet="hello-world">Hello World (JS)</button>
+            <button class="snippet-btn" data-language="javascript" data-snippet="variables">Variables (JS)</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast-message"></div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/python/python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/javascript/javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.min.js"></script>
+  <script src="code-snippets.js"></script>
+  <script src="app.js"></script>
+</body>
+</html> 
